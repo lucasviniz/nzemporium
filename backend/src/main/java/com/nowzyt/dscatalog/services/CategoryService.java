@@ -66,7 +66,7 @@ public class CategoryService {
 		} catch(EmptyResultDataAccessException e){
 			throw new ResourceNotFoundException("Id not found " + id);
 		}catch(DataIntegrityViolationException e) {
-			throw new DatabaseException("Integratity violation");
+			throw new DatabaseException("Integrity violation");
 		}
 	}
 	
